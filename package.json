@@ -3,7 +3,7 @@
     "version": "1.0.50",
     "scripts": {
         "dev": "bun run src/index.ts",
-        "vercel-build": "mkdir -p public && echo 'No static build needed' > public/index.html"
+        "vercel-build": "echo 'No build needed for Bun runtime'"
     },
     "dependencies": {
         "elysia": "latest"
