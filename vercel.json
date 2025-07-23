@@ -5,7 +5,10 @@
             "runtime": "@godsreveal/vercel-bun@0.2.4"
         }
     },
-    "rewrites": [{ "source": "/(.*)", "destination": "/api/index.ts" }],
+    "routes": [
+        { "src": "/api/(.*)", "dest": "/api/index.ts" },
+        { "src": "/(.*)", "dest": "/api/index.ts" }
+    ],
     "build": {
         "env": {
             "BUN_VERSION": "1.2.19"
